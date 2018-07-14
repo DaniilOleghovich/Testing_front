@@ -7,21 +7,42 @@ body
   padding: 0
 
 
-.main
+.header
   overflow: hidden
-  // background: #fff url(../images/third-bg.png) center top no-repeat
-  // background-size: 100% 450px
-  // margin-top: 2%
   // +breakpoint(867px)
   //   margin-top: 5%
   // +breakpoint(583px)
   //   margin-top: 12%
-  &-overlay
+  &-logo
+    width: 11%
+    // min-width: 122px
+    height: 108px
+    background: grey
+    margin-right: 25px
+  &-contact
+    width: 25%
+    // min-width: 280px
+    height: 108px
+    background: grey
+    margin-right: 25px
+  &-info
+    width: 47%
+    // min-width: 515px
+    height: 108px
+    background: grey
+    text-align: right
+    display: flex
+    flex-direction: column
+    a
+      text-decoration: none
+      p
+        font-size: 20px
+  &-inner
     width: 100%
-    max-width: 1920px
-    height: 500vh
+    max-width: 1024px
     margin: 0 auto
     overflow: hidden
+    display: flex
     // text-align: center
     // padding: 100px 0 310px
 

@@ -2,11 +2,32 @@ body {
   margin: 0 auto;
   padding: 0; }
 
-.main {
+.header {
   overflow: hidden; }
-  .main-overlay {
+  .header-logo {
+    width: 11%;
+    height: 108px;
+    background: grey;
+    margin-right: 25px; }
+  .header-contact {
+    width: 25%;
+    height: 108px;
+    background: grey;
+    margin-right: 25px; }
+  .header-info {
+    width: 47%;
+    height: 108px;
+    background: grey;
+    text-align: right;
+    display: flex;
+    flex-direction: column; }
+    .header-info a {
+      text-decoration: none; }
+      .header-info a p {
+        font-size: 20px; }
+  .header-inner {
     width: 100%;
-    max-width: 1920px;
-    height: 500vh;
+    max-width: 1024px;
     margin: 0 auto;
-    overflow: hidden; }
+    overflow: hidden;
+    display: flex; }
