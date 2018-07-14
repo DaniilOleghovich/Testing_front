@@ -14,35 +14,49 @@ body
   // +breakpoint(583px)
   //   margin-top: 12%
   &-logo
-    width: 11%
-    // min-width: 122px
+    width: 122px
     height: 108px
-    background: grey
-    margin-right: 25px
+    +breakpoint(912px)
+      // margin-right: 113px
+    +breakpoint(517px)
+      // margin-right: 0
+    img
+      width: 122px
+      height: 108px
   &-contact
-    width: 25%
-    // min-width: 280px
+    width: 280px
     height: 108px
     background: grey
-    margin-right: 25px
+    // margin-right: 25px
   &-info
-    width: 47%
-    // min-width: 515px
+    width: 515px
     height: 108px
+    padding: 0 20px 0 0
     background: grey
     text-align: right
     display: flex
     flex-direction: column
-    a
-      text-decoration: none
-      p
-        font-size: 20px
+    p
+      a
+        text-decoration: none
+        color: #fff
+        font-size: 14px
+        line-height: 22px
+      .links:hover
+        border-bottom: 1px solid #fff
   &-inner
     width: 100%
     max-width: 1024px
     margin: 0 auto
     overflow: hidden
     display: flex
+    justify-content: space-between
+    flex-direction: row
+    +breakpoint(913px)
+      flex-wrap: wrap
+      justify-content: center
+      +breakpoint(517px)
+        // justify-content: center
     // text-align: center
     // padding: 100px 0 310px
 

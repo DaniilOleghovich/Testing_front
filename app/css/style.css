@@ -5,29 +5,39 @@ body {
 .header {
   overflow: hidden; }
   .header-logo {
-    width: 11%;
-    height: 108px;
-    background: grey;
-    margin-right: 25px; }
+    width: 122px;
+    height: 108px; }
+    .header-logo img {
+      width: 122px;
+      height: 108px; }
   .header-contact {
-    width: 25%;
+    width: 280px;
     height: 108px;
-    background: grey;
-    margin-right: 25px; }
+    background: grey; }
   .header-info {
-    width: 47%;
+    width: 515px;
     height: 108px;
+    padding: 0 20px 0 0;
     background: grey;
     text-align: right;
     display: flex;
     flex-direction: column; }
-    .header-info a {
-      text-decoration: none; }
-      .header-info a p {
-        font-size: 20px; }
+    .header-info p a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      line-height: 22px; }
+    .header-info p .links:hover {
+      border-bottom: 1px solid #fff; }
   .header-inner {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
     overflow: hidden;
-    display: flex; }
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; }
+    @media screen and (max-width: 913px) {
+      .header-inner {
+        flex-wrap: wrap;
+        justify-content: center; } }
