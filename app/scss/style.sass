@@ -5,10 +5,14 @@
 body
   margin: 0 auto
   padding: 0
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 
 
 .header
   overflow: hidden
+  // position: fixed
   &-logo
     width: 122px
     height: 108px
@@ -82,13 +86,14 @@ body
     justify-content: space-between
     +breakpoint(896px)
       width: 80%
+      margin-bottom: 20px
       text-align: center
       justify-content: center
     &__info
       background: grey
       padding-right: 10px
-      // width: 185px
-      // text-align:
+      +breakpoint(896px)
+        margin-bottom: 20px
       p
         margin-left: 20px
         color: #fff

@@ -1,6 +1,9 @@
 body {
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .header {
   overflow: hidden; }
@@ -66,11 +69,15 @@ body {
     @media screen and (max-width: 896px) {
       .content-left {
         width: 80%;
+        margin-bottom: 20px;
         text-align: center;
         justify-content: center; } }
     .content-left__info {
       background: grey;
       padding-right: 10px; }
+      @media screen and (max-width: 896px) {
+        .content-left__info {
+          margin-bottom: 20px; } }
       .content-left__info p {
         margin-left: 20px;
         color: #fff;
